@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculating Pi</title>
+</head>
+
+{% if numsims==1 %}
+<center> <h3> You ran the Monte Carlo simulation {{ numsims }} time! </h3> </center>
+{% else %}
+<center> <h3> You ran the Monte Carlo simulation {{ numsims }} times! </h3> </center>
+{% endif %}
+
+{% if numsims>9999 %}
+    <center> <h4> That's a lot! </h4> </center>
+{% endif %}
+<center> <h3> From this, pi can be calculated as: <p style="color:#0BDA51;"> {{ pi }} </p> </h3> </center>
+
+<body>
+</body>
+</html>
